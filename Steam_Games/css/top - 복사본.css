@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/***** top_all(size) *****/
+#top_wrap {
+	width: 1024px;
+	height: 180px;
+	margin: 20px auto;
+}
+
+/***** logo, login *****/
+#login_bar {
+	width: 1024px;
+	height: 80px;
+}
+
+/****************************************************************/
+
+/*** top_logo(main) ***/
+#logo > h1 {
+	float: left;
+	width: 200px;
+	height: 80px;
+}
+#logo > h1 > a {
+	cursor: default;
+}
+#logo > h1 > a >img {
+	width: 200px;
+	height: 80px;
+}
+/*** top_login(main) ***/
+#login {
+	float: right;
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+}
+#login label {
+	font-size: 16px;
+	letter-spacing: 1px;
+	float: left;
+}
+#login label:nth-of-type(1) {
+	margin-left: 10px;
+}
+#login label:nth-of-type(2) {
+	margin-left: 20px;
+}
+#login input {
+	float: left;
+	margin: 5px 0 0 10px;
+	outline: none;
+}
+#login input:nth-of-type(1),
+#login input:nth-of-type(2) {
+	width: 120px;
+	height: 30px;
+	line-height: 25px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-indent: 5px;
+}
+#login input:nth-of-type(3) {
+	width: 70px;
+	height: 30px;
+	background-color: #eaeaea;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+#login input:nth-of-type(3):hover {
+	background-color: #faf1dc;
+	border: 1px outset #faf1dc;
+	box-shadow: 3px 3px 1px 1px #eaeaea;
+	color: #888;
+	font-weight: bold;
+}
+
+#login input:nth-of-type(4) {
+	clear: both;
+	float: right;
+	width: 150px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 3px 10px 0 0;
+}
+#login input:nth-of-type(4):hover {
+	background-color: #faf1dc;
+	border: 1px outset #faf1dc;
+	box-shadow: 3px 3px 1px 1px #eaeaea;
+	color: #888;
+	font-weight: bold;
+}
+
+/****************************************************************/
+
+/***** navigation *****/
+#top_navi {
+	width: 1024px;
+	height: 100px;
+	margin-top: 10px;
+	line-height: 100px;
+}
+#top_navi ul {
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+	line-height: normal;
+}
+#top_navi ul li {
+	display: inline-block;
+	height: 40px;
+	color: #ccc;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 50px;
+	/* background-color: #eaeaea;
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px #888; */
+}
+#top_navi ul li a {
+	display: inline-block;
+	height: 40px;
+	color: rgba(9, 3, 14, 0.664);
+	padding-top: 5px;
+}
+
+#top_navi ul li:hover a {
+	background-color: rgba(7, 7, 7, 0.637);
+	border-radius: 8px;
+	color: #eaeaea;
+	text-shadow: 0 30px;
+}
+
+
