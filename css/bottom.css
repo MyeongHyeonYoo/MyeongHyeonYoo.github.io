@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#footer {
+  width: 1860px;
+  height: 250px;
+  margin: 100px auto 0 auto;
+  background-color: black;
+  min-width: 1860px;
+}
+
+#information {
+  float: left;
+  margin-left: 50px;
+  padding-top: 50px;
+}
+#information p {
+  float: left;
+  margin-right: 100px;
+  
+}
+#information p a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: tomato;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 10px;
+  -webkit-text-decoration-thickness: 10px;
+  -moz-text-decoration-thickness: 10px;
+  -o-text-decoration-thickness: 10px;
+  -ms-text-decoration-thickness: 10px;
+}
+
+#follow {
+  clear: both;
+  float: left;
+  margin-left: 50px;
+
+}
+#follow P {
+  float: left;
+  margin: 100px 50px 0 50px;
+}
+#follow P a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline wavy;
+  text-decoration-color: darkblue;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-thickness: 3px;
+  -moz-text-decoration-thickness: 3px;
+  -o-text-decoration-thickness: 3px;
+  -ms-text-decoration-thickness: 3px;
+}
+
+#sign_up {
+  float: right;
+  width: 1000px;
+  height: 220px;
+  margin-top: -45px;
+}
+
+#sign_up > h5 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-left: 80px;
+}
+#sign_up > p {
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-left: 80px;
+}
+#sign_up > p:nth-of-type(1) input {
+  width: 320px;
+  height: 30px;
+  outline: none;
+  margin: 10px 0 20px 0;
+}
+#sign_up > p:nth-of-type(1) input:enabled {
+  color: darkred;
+  font-size: 18px;
+  font-weight: bold;
+}
+#sign_up > p:nth-of-type(1) input::placeholder {
+  letter-spacing: 7px;
+  text-indent: 10px;
+  font-size: 12px;
+
+  color: #bababa;
+}
+#sign_up > p:nth-of-type(2) {
+  float: left;
+}
+
+#sign_up > p:nth-of-type(3) input {
+  margin-left: 10px;
+}
+
+#sign_up p > .bottom_btn {
+  float: right;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 2px;
+  margin-right: 40px;
+  width: 100px;
+  height: 45px;
+}
+
+.alert_sing_up { /* js add */
+  font-size: 20px;
+  text-shadow: 
+  -1px -1px 2px #777,
+  1px 1px 1px #777,
+  2px 2px 1px #777,
+  3px 3px #777;
+  float: right;
+  width: 320px;
+  line-height: 45px;
+  margin-right: 5px;
+}

@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font: normal 15px/1.5em 'Courier New', Courier, monospace;
+  color: #333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}body  {
+  background: url(../images/background/song_of_songs_background.jpg) no-repeat left 50% top 48%/contain;
+}
+input, button {
+  outline: none;
+  color: #777;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* all */
+#account_wrap {
+  width: 100%;
+  height: 100%;
+}
+#account_wrap form {
+  width: 700px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* all fieldset */
+#account_wrap fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* CREATE AN ACCOUNT, ACCOUNT PROFILE - fieldset */
+.form_f,
+.form_b {
+  margin: 25px 10px;
+  padding-left: 50px;
+}
+.form_f {
+  padding-bottom: 40px;
+}
+.form_f > fieldset,
+.form_b > fieldset {
+  margin-left: 0;
+}
+.form_f > fieldset legend {
+  text-align: center;
+}
+.form_b > fieldset legend {
+  text-align: left;
+  margin-left: 20px;
+}
+#account_wrap fieldset legend {
+  font-size: 20px;
+}
+/* CREATE AN ACCOUNT, ACCOUNT PROFILE - legend[title] */
+#account_wrap fieldset .form_title {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left;
+}
+
+
+/****** First-Box : 'CREATE AN ACCOUNT' *******/
+
+/* ENTER EMAIL ADDRESS - ID */
+.id {
+  width: 300px;
+  height: 80px;
+  margin: 20px 0 0 50px;
+  line-height: 50px;
+}
+.id > legend {
+  height: 22px;
+  line-height: normal;
+}
+.id > label {
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+.id > input {
+  margin-left: 10px;
+  cursor: text;
+}
+
+/* ENTER EMAIL ADDRESS - PASSWORD */
+.password {
+  width: 380px;
+  height: 130px;
+  margin: 25px 0 -15px 50px;
+  line-height: 50px;
+}
+.password > legend {
+  height: 22px;
+  line-height: normal;
+}
+.password > p {
+  margin-left: 20px;
+}
+.password > p > input {
+  cursor: text;
+}
+.password > p:nth-of-type(1) {
+  letter-spacing: 7px;
+}
+.password > P:nth-of-type(1) > input:nth-of-type(2) {
+  accent-color: crimson;
+  width: 15px;
+  margin-left: -5px;
+}
+.password > p:nth-of-type(2) {
+  letter-spacing: -1px;
+}
+.password > P:nth-of-type(2) > input {
+  margin-left: 7px;
+}
+.password > P:nth-of-type(2) > input:nth-of-type(2) {
+  margin-left: 4px;
+  width: 15px;
+  accent-color: crimson;
+}
+
+/************ First-Box [END]  **************/
+
+
+/****** Second-Box : ACCOUNT PROFILE  *******/
+
+/* ACCOUNT PROFILE - gender */
+.gender {
+  width: 220px;
+  height: 70px;
+  margin: 20px 0 20px 50px;
+  line-height: 40px;
+}
+.gender > legend {
+  height: 22px;
+  line-height: normal;
+}
+#man { /* input hide */
+  opacity: 0;
+}
+#woman { /* input hide */
+  opacity: 0;
+}
+.gender_wrap { /* js 추가 */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 12px;
+  left: 13px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px 2px 6px 0;
+  z-index: 5;
+}
+.gender label {
+  margin-left: 20px;  
+}
+
+
+/* ACCOUNT PROFILE - name */
+.name {
+  width: 380px;
+  height: 100px;
+  margin: 20px 0 20px 50px;
+  line-height: 40px;
+}
+.name legend {
+  height: 22px;
+  line-height: normal;
+}
+.name div {
+  float: left;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.name div:first-of-type {
+  width: 170px;
+  border-right: 1px solid #ccc;
+}
+.name div > label {
+  padding-left: 3px;
+  letter-spacing: 3px;
+}
+.name > div input {
+  width: 150px;
+  display: block;
+  cursor: text;
+}
+
+
+/* ACCOUNT PROFILE - birth */
+.birth {
+  width: 430px;
+  height: 70px;
+  margin: 20px 0 20px 50px;
+  line-height: 30px;
+}
+.birth legend {
+  height: 22px;
+  line-height: normal;
+}
+.birth div {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.birth div:nth-of-type(1) {
+  width: 140px;
+  margin-left: 20px;
+}
+.birth div:nth-of-type(2) {
+  width: 120px;
+
+}
+.birth div:nth-of-type(3) {
+  border: none;
+}
+.birth div > select {
+  width: 65px;
+  outline: none;
+}
+
+
+/* ACCOUNT PROFILE - tel */
+.tel {
+  width: 320px;
+  height: 65px;
+  margin: 15px 0 20px 50px;
+  line-height: 35px;
+}
+.tel legend {
+  height: 22px;
+  line-height: normal;
+}
+.tel label {
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+.tel input {
+  cursor: text;
+}
+.tel input:nth-of-type(1) {
+  width: 50px;
+  margin-left: 5px;
+}
+.tel input:nth-of-type(2) {
+  width: 70px;
+}
+.tel input:nth-of-type(3) {
+  width: 70px;
+}
+.tel span {
+  font-size: 5px;
+}
+
+/* ACCOUNT PROFILE - address */
+.address {
+  width: 580px;
+  height: 100px;
+  margin: 15px 0 20px 50px;
+  line-height: 30px;
+}
+.address legend {
+  height: 22px;
+  line-height: normal;
+}
+.address div {
+  margin-left: 20px;
+}
+.address div:first-of-type {
+  margin-top: 10px;
+}
+.address div:first-of-type label {
+  letter-spacing: -1px;
+}
+.address div:last-of-type label {
+  letter-spacing: 4px;
+  margin-left: 1px;
+}
+.address div input {
+  cursor: text;
+}
+.address div:first-of-type input {
+  width: 70px;
+  height: 20px;
+  margin-left: 15px;
+}
+.address div:first-of-type input:nth-of-type(2) {
+  margin-left: 5px;
+  width: 60px;
+  height: 25px;
+  color: #222;
+}
+.address div:last-of-type input {
+  width: 400px;
+  height: 20px;
+  margin-left: 10px;
+}
+/****** Second-Box [END] *******/
+
+
+/* bottom - Select your interests */
+.bottom {
+  width: 600px;
+  height: 120px;
+  margin: 20px 0 0 60px;
+  line-height: 50px;
+}
+#account_wrap > form > fieldset.bottom {
+  border: none;
+  border-radius: 0;
+}
+.bottom > P {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.bottom > input {
+  margin-left: 25px;
+  width: 18px;
+  height: 18px;
+  accent-color: crimson;
+}
+.bottom > label {
+  margin-left: 10px;
+}
+
+/* Terms of service, Privacy, submit */
+.submit {
+  width: 600px;
+  float: right;
+  line-height: 35px;
+  text-align: right;
+  padding-right: 20px;
+  margin: 20px 50px 30px 0;
+  background: url(../images/logo/kilian_logo5.png) no-repeat left top -40px /200px 200px;
+  background-color: white;
+}
+.submit p a {
+  color: #222;
+}
+.submit p:hover a {
+  text-decoration: underline wavy rgba(220, 20, 60, 0.418);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 5px;
+  cursor: alias;
+}
+.submit > button {
+  margin-top: 5px;
+  width: 80px;
+  height: 38px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 
+  background-color 400ms,
+  box-shadow 400ms,
+  color 500ms,
+  font-size 150ms,
+  letter-spacing 200ms;
+}
+.submit > button:hover  {
+  background-color: #222;
+  color: aliceblue;
+  font-size: 15px;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 2px #999;
+}

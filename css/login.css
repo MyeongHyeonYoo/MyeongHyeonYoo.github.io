@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/* all */
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+body {
+  width: 100%;
+  font: normal 15px/1.5em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f9f9f9;
+  background: url(../images/background/KakaoTalk_20221109_192830502.webp) no-repeat left top/cover;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+/* form */
+#account {
+  width: 580px;
+  margin: 20px auto;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+  padding-right: 3px;
+  border-radius: 5px 25px 2px 0/5px 220px 2px 0;
+  background-color: white;
+}
+#account > h1 {
+  padding-left: 40px;
+  -webkit-filter: brightness(50%) contrast(150%);
+  -moz-filter: brightness(50%) contrast(150%);
+  -ms-filter: brightness(50%) contrast(150%);
+  -o-filter: brightness(50%) contrast(150%);
+  filter: brightness(50%) contrast(150%);
+  border-bottom: 3px double crimson;
+}
+#account button {
+  width: 49%;
+  height: 70px;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  transition: all 450ms;
+}
+#account button:nth-of-type(1) {
+  margin-left: 4px;
+}
+#account button:hover {
+  color: white;
+  background-color: #333;
+  font-weight: bolder;
+}
+
+
+/* account_wrap position */
+#account_wrap {
+  position: relative;
+}
+
+/* account_wrap 'member' position */
+#member_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 0 0 100px 20px/0 0 600px 40px;
+  padding-right: 20px;
+}
+
+/*** member login ***/
+.member {
+  width: 400px;
+  height: 180px;
+  margin: 50px 80px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background-color: white;
+}
+.member > legend {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 1;
+}
+.member > div {
+  margin: 20px;
+}
+.member > div input {
+  letter-spacing: 2px;
+  text-indent: 5px;
+}
+/* member login [id] */
+.member > div:nth-of-type(1) {
+  float: left;
+  margin-top: 35px;
+  margin-left: 95px;
+}
+.member > div > #login_id {
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+/* member login [password] */
+.member > div:nth-of-type(2) {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+.member > div > #login_password {
+  width: 200px;
+  height: 30px; 
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+/* Member-Password 'show & hide' [checkbox] */
+.member div:nth-of-type(2) .change_btn1 {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  margin-left: 15px;
+  accent-color: crimson;
+}
+
+/* member login 'button' [SIGN IN]  */
+.sign_in_btn {
+  float: right;
+}
+.sign_in_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 
+  border 100ms,
+  color 350ms,
+  font-weight 350ms,
+  background-color 450ms;
+}
+.sign_in_btn:hover {
+  color: white;
+  background-color: darkslateblue;
+  border: 2px solid transparent;
+  font-weight: bolder;
+}
+
+
+/* account_wrap 'non-member' position */
+#non_member_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 0 0 100px 20px/0 0 600px 40px;
+  padding-right: 20px;
+}
+
+/*** Non-Member Check ***/
+#account_wrap > div:nth-of-type(2) {
+  clear: both;
+}
+.non_member {
+  width: 400px;
+  height: 180px;
+  margin: 50px 80px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background-color: white;
+}
+.non_member > legend {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 1;
+}
+.non_member > div {
+  margin: 20px;
+}
+.non_member > div input {
+  letter-spacing: 2px;
+  text-indent: 5px;
+}
+
+/* Non-Member Check [Tel] */
+.non_member > div:nth-of-type(1) {
+  float: left;
+  margin-left: 82px;
+  margin-top: 35px;
+}
+.non_member > div > #check_tel {
+  width: 50px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+.non_member > div > input:nth-of-type(2) {
+  width: 60px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+.non_member > div > input:nth-of-type(3) {
+  width: 60px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+/* (Tel) ' - ' &ndash;  */
+.non_member div:nth-of-type(1) > span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/* Non-Member Check [Password] */
+.non_member > div:nth-of-type(2) {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+.non_member > div > #check_password {
+  width: 200px;
+  height: 30px; 
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+/* Non-Member-Password 'show & hide' [checkbox] */
+.non_member > div:nth-of-type(2) > .change_btn2 {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  margin-left: 8.5px;
+  accent-color: crimson;
+}
+
+/* non_member Check 'button' [CHECK]  */
+#account_wrap > div > div {
+  float: right;
+  margin-right: 50px;
+}

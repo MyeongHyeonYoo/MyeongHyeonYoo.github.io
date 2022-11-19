@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import url("top.css");
+@import url("contents.css");
+@import url("bottom.css");
+
+/* font-family: 'Amatic SC', cursive; */
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clear {
+  clear: both;
+}
+a, img, button {
+  cursor: pointer;
+}
+
+body {
+  font: 15px/1.5em Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+body::-moz-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+body::-o-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+body::-ms-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: blanchedalmond;
+}
+body::-moz-scrollbar-track{
+  background-color: blanchedalmond;
+}
+body::-o-scrollbar-track{
+  background-color: blanchedalmond;
+}
+body::-ms-scrollbar-track{
+  background-color: blanchedalmond;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: maroon;
+}
+body::-moz-scrollbar-thumb {
+  background-color: maroon;
+}
+body::-o-scrollbar-thumb {
+  background-color: maroon;
+}
+body::-ms-scrollbar-thumb {
+  background-color: maroon;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: firebrick;
+}
+body::-moz-scrollbar-thumb:active {
+  background-color: firebrick;
+}
+body::-o-scrollbar-thumb:active {
+  background-color: firebrick;
+}
+body::-ms-scrollbar-thumb:active {
+  background-color: firebrick;
+}
