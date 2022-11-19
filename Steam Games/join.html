@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/join.css">
+  </head>
+
+  <body>
+    <div id="join_container">
+      <h3>회원가입</h3>
+      <p class="information"><strong class="point">&ast; </strong>는 필수입력 항목을 나타냅니다.</p>
+      <form action="join.aps" method="post" id=join>
+       
+        <fieldset class="join1">
+          <legend>필수 입력 항목</legend>
+          <p class="box_i">
+            <label for="u_name"><strong class="point">&ast; </strong>이름</label>
+            <input id="u_name" type="text" required>
+          </p>
+          <p class="box_t">
+            <strong class="point">주의!</strong>
+            아이디는 영문자와 숫자만을 사용하여 &lsquo;4글자 이상 ~ 16글자 이하&rsquo;로 작성해 주세요.
+          </p>
+          <p class="box_i">
+            <label for="u_id"><strong class="point">&ast; </strong>아이디</label>
+            <input id="u_id" type="text" required>
+          </p>
+          <p class="box_t">
+            <strong class="point">주의!</strong>
+            비밀번호는 보안을 위해 영문자&comma; 숫자 및 특수문자 등을 조합하여 작성하시기 바랍니다.
+          </p>
+          <p class="box_t">
+            <strong class="point">주의!</strong>
+            비밀번호는 보안을 위해 4글자 이상으로 작성해 주세요.
+          </p>
+          <p class="box_i">
+            <label for="pwd1"><strong class="point">&ast; </strong>비밀번호</label>
+            <input id="pwd1" type="password" required>
+          </p>
+          <p class="box_i">
+            <label for="pwd2"><strong class="point">&ast; </strong>비밀번호 확인</label>
+            <input id="pwd2" type="password" required>
+          </p>
+          <p class="box_t">
+            <strong class="infor">안내!</strong>
+            우편번호를 모를 경우에는 빈칸으로 두고 주소만 제대로 입력하면 됩니다.
+          </p>
+          <p class="box_i">
+            <label for="zip1"><strong class="point">&ast; </strong>우편번호</label>
+            <input id="zip1" type="text" required> &ndash; 
+            <input id="zip2" type="text" required>
+            <input class="zip_btn" type="button" value="우편번호 찾기">
+          </p>
+          <p class="box_t">
+            <strong class="point">주의!</strong>
+            주소는 
+            &lsqb;시&sol;도&rsqb; 
+            &lsqb;시&sol;구&sol;군&rsqb;
+            &lsqb;읍&sol;면&sol;리&rsqb;
+            &lsqb;번지&rsqb;
+            &lsqb;건물&sol;아파트명&rsqb;
+            순서로 입력해 주세요. 
+          </p>
+          <p class="box_i">
+            <label for="add"><strong class="point">&ast; </strong>주소</label>
+            <input id="add" type="text" required>
+          </p>
+          <p class="box_i">
+            <label for="tel1"><strong class="point">&ast; </strong>전화번호</label>
+            <input id="tel1" type="tel" title="지역번호 입력" required> &ndash;
+            <input id="tel2" type="tel" title="전화번호 앞자리" required> &ndash;
+            <input id="tel3" type="tel" title="전화번호 뒷자리" required>
+          </p>
+        </fieldset> <!-- join1 필수 입력 항목 -->
+       
+        <fieldset class="join2">
+          <legend>비밀번호 찾는 방법 선택</legend>
+          <p class="box_t"><strong class="infor">안내!</strong>
+            비밀번호를 잊어버렸을 경우&comma; 비밀번호 수신 방법을 선택해 주세요.
+          </p>
+          <p class="box_i">
+            <span class="box_s"><strong class="point">&ast; </strong>수신방법</span>
+            <input id="sms" type="radio" name="receive">
+            <label for="sms">휴대전화 SMS문자</label> &sol;
+            <input id="mail" type="radio" name="receive">
+            <label for="mail" class="radio_t">자주 사용하는 이메일</label>
+          </p>
+          <div class="box_ii">
+            <label class="box_s" for="phone1">휴대전화번호</label>
+            <p id="phone1_wrap">
+              <select id="phone1">
+                <option>선택</option>
+                <option value="010">010</option>
+                <option value="011">011</option>
+              </select>
+            </p>
+            &ndash; <input id="phone2" type="tel" title="전화번호 앞자리">
+            &ndash; <input id="phone3" type="tel" title="전화번호 뒷자리">
+          </div>  <!-- box_ii -->
+          <p class="box_i">
+            <label class="box_s" for="u_email">이메일</label>
+            <input id="u_email" type="email">
+          </p>
+        </fieldset>  <!-- join2 비밀번호 찾는 방법 선택 -->
+        
+        <fieldset class="join3">
+          <legend>이용약관 동의</legend>
+          <p class="text_wrap">
+            <textarea title="가입 약관" rows="15" cols="65">◆ 제1조 목적 등 ◆ 
+1. 스팀 웹사이트 (https://steampowered.com/) 이용자 약관은 이용자가 ㈜스팀(이하 "스팀"라 합니다) 에서 제공하는 인터넷 관련 서비스를 이용함에있어 이용자와 스팀의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.  
+2. 본 약관에 정하는 이외의 이용자와 스팀의 권리, 의무 및 책임사항에 관해서는전기통신 사업법 기타 대한민국의 관련 법령과 상관습에 의합니다.  
+
+◆ 제2조 회원가입 ◆  
+1. 이용자가 되고자 하는 자는 스팀가 정한 가입 양식에 따라 회원정보를 기입하고 "등록하기" 단추를 누르는 방법으로 회원 가입을 신청합니다.  
+2. 스팀는 제1항과 같이 회원으로 가입할 것을 신청한 자가 다음 각 호에 해당하지않는 한 신청한 자를 회원으로 등록합니다. 
+① 가입신청자가 본 약관 제3조 제3항에 의하여 이전에 회원자격을 상실한 적이있는 경우 (다만 제3조 제3항에 의한 회원자격 상실 후 3년이 경과한 자로서 스팀의 회원 재가입 승낙을 얻은 경우에는 예외로 합니다.) 
+②  등록 내용에 허위, 기재누락, 오기가 있는 경우  
+③ 기타 회원으로 등록하는 것이 스팀의 기술상 현저히 지장이 있다고 판단되는 경우 
+
+3. 회원은 제1항의 회원정보 기재 내용에 변경이 발생한 경우, 즉시 변경사항을정정하여 기재하여야 합니다.  
+
+◆ 제3조 이용자 탈퇴 및 자격상실 등 ◆  
+1. 이용자가 다음 각 호의 사유에 해당하는 경우, 스팀는 이용자의 회원자격을 적절한 방법으로 제한 및 정지, 상실 시킬 수 있습니다.  
+2. ①  가입 신청 시에 허위 내용을 등록한 경우  
+② 다른 사람의 스팀 이용을 방해하거나 그 정보를 도용하는 등 전자거래 질서를 위협하는 경우  
+③ 스팀를 이용하여 법령과 본 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우 
+
+3. 스팀가 이용자의 회원자격을 상실시키기로 결정한 경우에는 회원등록을 말소합니다. 이 경우 이용자인 회원에게 회원등록 말소 전에 이를 통지하고, 소명할 기회를 부여합니다.  
+
+◆ 제4조 이용자에 대한 통지 ◆  
+1. 스팀는 특정 이용자에 대한 통지를 하는 경우 스팀가 보유하고 있는 고객의 메일주소를 이용하여 통지를 할 수 있습니다.  
+2. 스팀가 불특정다수 이용자에 대한 통지를 하는 경우 1주일이상 스팀가 게시판에 게시함으로써 개별 통지에 갈음할 수 있습니다.  
+
+◆ 제5조 이용자의 개인정보 보호 ◆  
+1. 스팀는 관련법령이 정하는 바에 따라서 이용자 등록정보를 포함한 이용자의 개인정보를 보호하기 위하여 노력합니다. 이용자의 개인정보보호에 관해서는 관련 법령 및 스팀가 정하는 "개인정보보호정책"에 정한 바에 의합니다.  
+
+◆ 제 6조 이용자의 비밀번호에 대한 의무 ◆  
+1. 스팀가 관계법령, "개인정보보호정책"에 의해서 그 책임을 지는 경우를 제외하고,자신의 ID와 비밀번호에 관한 관리책임은 각 이용자에게 있습니다.  
+2. 이용자는 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다.  
+3. 이용자는 자신의 ID 및 비밀번호를 도난당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 스팀에 통보하고 스팀의 안내가 있는 경우에는 그에 따라야 합니다.  
+
+◆ 제7조 이용자의 의무 ◆  
+1. 이용자는 다음 각 호의 행위를 하여서는 안됩니다.  
+①  회원가입신청 또는 변경시 허위내용을 등록하는 행위  
+② 기타 제3자의 인격권 또는 지적재산권을 침해하거나 업무를 방해하는 행위 
+③ 다른 회원의 ID를 도용하는 행위  
+정크메일(junk mail), 스팸메일(spam mail), 행운의 편지(chain letters), 피라미드 조직에 가입할 것을 권유하는 메일, 외설 또는 폭력적인 메시지 ·화상·음성 등이 담긴 메일을 보내거나 기타 공서양속에 반하는 정보를 공개 또는 게시하는 행위
+관련 법령에 의하여 그 전송 또는 게시가 금지되는 정보(컴퓨터 프로그램등)의 전송 또는 게시하는 행위 
+스팀의 직원이나 스팀서비스의 관리자를 가장하거나 사칭하여 또는 타인의 명의를 모욕하여 글을 게시하거나 메일을 발송하는 행위
+다른 이용자에 대한 개인정보를 그 동의 없이 수집,저장,공개하는 행위 
+불특정 다수의 자를 대상으로 하여 광고 또는 선전을 게시하거나 스팀의 서비스를 이용하여 영리목적의 활동을 하는 행위  
+
+2. 제1항에 해당하는 행위를 한 이용자가 있을 경우 스팀는 본 약관 제4조 제2,3항에서 정한 바에 따라 이용자의 회원자격을 적절한 방법으로 제한 및 정지,상실시킬 수 있습니다. 
+
+3. 이용자는 그 귀책사유로 인하여 스팀가나 다른 이용자가 입은 손해를 배상할 책임이 있습니다.  
+
+◆ 부칙 ◆  
+본 약관은 2002년 5월 15일부터 적용합니다.</textarea>    
+          </p>
+          <p class="box_i">
+            <input id="chk1" type="radio" name="agree" value="1">
+            <label for="chk1">동의</label>
+            <input id="chk2" type="radio" name="agree" value="2">
+            <label for="chk2">동의안함</label>
+          </p>
+        </fieldset> <!-- join3 이용약관 -->
+
+        <p class="btn">
+          <input type="submit" value="회원가입하기">
+          <input type="reset" value="다시작성">
+        </p> <!-- btn 회원가입하기, 다시작성 -->
+      </form> <!-- join -->
+    </div> <!-- join_container_all_ -->
+  </body>
+</html>
